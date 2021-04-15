@@ -1,0 +1,29 @@
+#container {
+	width: 800px;
+	padding: 15px;
+	margin-top: 280px;
+	border: 1px dotted rebeccapurple;
+	position: relative;
+	background: #fefefe;
+	font-size: xx-large;
+}
+
+#container::before,
+#container::after {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 19px;
+	display: block;
+	border: 180px solid rebeccapurple;
+	border-bottom-color: #dddddd;
+}
+
+#container::after {
+	left: 20px;
+	border: 180px solid rebeccapurple;
+	border-top-color: green;
+	border-bottom-color: rebeccapurple;
+	border-right-color: orange;
+	border-left-color: blue;
+}
